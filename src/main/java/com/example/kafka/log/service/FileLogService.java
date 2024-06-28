@@ -9,12 +9,12 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Component
-public class LogService {
+public class FileLogService {
 
     private FileWriter fileWriter;
     private PrintWriter printWriter;
 
-    public LogService() {
+    public FileLogService() {
         try {
             this.fileWriter = new FileWriter("file-log", true);
             this.printWriter = new PrintWriter(fileWriter);
