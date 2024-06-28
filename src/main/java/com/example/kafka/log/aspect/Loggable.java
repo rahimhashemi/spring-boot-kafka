@@ -1,4 +1,4 @@
-package com.example.kafka.log;
+package com.example.kafka.log.aspect;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

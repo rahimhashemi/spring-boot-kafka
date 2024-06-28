@@ -1,5 +1,6 @@
-package com.example.kafka.log;
+package com.example.kafka.log.aspect;
 
+import com.example.kafka.log.service.LogService;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -29,6 +30,7 @@ public class LogAspect {
 
         // Log user action after method execution
         logService.logUserAction(result.toString());
+        logService.close();
 
         return result;
     }

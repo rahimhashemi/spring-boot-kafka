@@ -1,4 +1,4 @@
-package com.example.kafka.log;
+package com.example.kafka.log.service;
 
 import org.springframework.stereotype.Component;
 

@@ -1,5 +1,7 @@
-package com.example.kafka.log;
+package com.example.kafka.log.controller;
 
+import com.example.kafka.log.dto.DepositRequest;
+import com.example.kafka.log.aspect.Loggable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
